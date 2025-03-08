@@ -12,8 +12,8 @@ export default function Home() {
               Logo
             </div>
             <div>
-              <h1 className="text-4xl font-bold mb-2">Your Name</h1>
-              <p className="text-xl text-gray-200">Full Stack Developer</p>
+              <h1 className="text-4xl font-bold mb-2">PhoenixNet-Labs</h1>
+              <p className="text-xl text-gray-200">A compliation of projects, accomplishments, and experiences.</p>
             </div>
           </div>
         </div>
@@ -22,22 +22,29 @@ export default function Home() {
       {/* Main Content */}
       <section className="py-20">
         <div className="container">
-          <h2 className="text-3xl font-bold mb-12">About Me</h2>
+          <h2 className="text-3xl font-bold mb-12">A Little About Me:</h2>
           
           {/* Two Paragraph Sections */}
           <div className="grid md:grid-cols-2 gap-12 mb-20">
             <div>
-              <h3 className="text-xl font-semibold mb-4">My Journey</h3>
+              <h3 className="text-xl font-semibold mb-4">Who, or rather, what is PhoenixNet-Labs?</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                Your journey description goes here. Write about your background,
-                experiences, and what led you to become a developer.
+                PhoenixNet-Labs is a "pseudo-company" that I created to host my projects and accomplishments, 
+                as well as to showcase my skills and abilities to future employers.
+                <br/><br/>
+                I created PhoenixNet-Labs in highschool to put a brand on my projects and practices, akin to how Microsoft uses "Contoso" or "A. Datumum Coporation" for their examples.
+                <br/><br/>
+                PhoenixNet-Labs is not a real company, and is not affiliated with any real company. I use this brand to "encompass" all of my projects and practices, and to give them a cohesive brand.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-4">My Approach</h3>
+              <h3 className="text-xl font-semibold mb-4">Well, then who are you?</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                Describe your approach to development, your philosophy, and what
-                makes you unique as a developer.
+                I'm an IT Specialist, and have been in the IT field for about 4 years now. I've encountered many different technologies in that time, and have a large amount of exposure to a lot of major technologies.
+                <br/><br/>
+                I use my lab to try to learn new technologies, mirror my employer's environments, and to keep my skills sharp.
+                <br/><br/>
+                Below are some of my projects that I've worked on, and some of my skills, take a look around!
               </p>
             </div>
           </div>
