@@ -7,8 +7,12 @@ import { ThemeSwitcher } from "@/components/ThemeSwitcher";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "My professional portfolio showcasing my work and skills",
+  title: "PhoenixNet-Labs",
+  description: "A compilation of projects, accomplishments, and experiences.",
+  icons: {
+    icon: '/images/pnet-logo.png',
+    apple: '/images/pnet-logo.png',
+  }
 };
 
 export default function RootLayout({
