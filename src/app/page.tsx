@@ -42,10 +42,10 @@ export default function Home() {
             <div>
               <h3 className="text-xl font-semibold mb-4">Who, or rather, what is PhoenixNet-Labs?</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                PhoenixNet-Labs is a "pseudo-company" that I created to host my projects and accomplishments, 
-                as well as to showcase my skills and abilities to future employers.
+                PhoenixNet-Labs is a "pseudo-company" that I use to host my projects, 
+                as well as to showcase my skills and knowledge to future employers.
                 <br/><br/>
-                I created PhoenixNet-Labs in highschool to put a brand on my projects and practices, akin to how Microsoft uses "Contoso" or "A. Datumum Coporation" for their examples.
+                I created PhoenixNet-Labs in highschool to put a brand on my projects, akin to how Microsoft uses "Contoso" for their examples.
                 <br/><br/>
                 PhoenixNet-Labs is not a real company, and is not affiliated with any real company. I use this brand to "encompass" all of my projects and practices, and to give them a cohesive brand.
               </p>
@@ -53,11 +53,11 @@ export default function Home() {
             <div>
               <h3 className="text-xl font-semibold mb-4">Well, then who are you?</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                I'm an IT Specialist, and have been in the IT field for about 4 years now. I've encountered many different technologies in that time, and have a large amount of exposure to a lot of major technologies.
+                I'm an IT Specialist, and have been in the IT field for about 4 years now. I've encountered many different technologies during my time.
                 <br/><br/>
-                I use my lab to try to learn new technologies, mirror my employer's environments, and to keep my skills sharp.
+                I use my lab to learn new technologies, mirror my employer's environments, and to keep my skills sharp.
                 <br/><br/>
-                Below are some of my projects that I've worked on, and some of my skills, take a look around!
+                Below are some of the projects that I've worked on, and a list of my skills, take a look around!
               </p>
             </div>
           </div>
@@ -114,7 +114,7 @@ export default function Home() {
                     Networking
                   </span>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Network Setup</h3>
+                <h3 className="text-xl font-semibold mb-2">Advanced Networking</h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
                   Enterprise-grade network infrastructure with OPNsense firewall, VLAN segmentation, and VPN technologies.
                 </p>
@@ -144,7 +144,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Telecommunications</h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  Communications systems using Cisco CUCM, Cisco Unity, and UC Phones.
+                  A communications system using Cisco CUCM, Cisco Unity, and UC Phones.
                 </p>
               </div>
             </TiltCard>
@@ -197,7 +197,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Centralized Storage</h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  Centralized storage using TrueNAS Scale, NextCloud for file sharing, and NFS for distributed storage.
+                  Centralized storage using TrueNAS Scale, NextCloud for file sharing, and NFS VMHost Storage.
                 </p>
               </div>
             </TiltCard>
@@ -252,7 +252,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Uptime Kuma</h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  Ream-time monitoring and alerting using Uptime Kuma.
+                  Real-time monitoring and alerting using Uptime Kuma.
                 </p>
               </div>
             </TiltCard>
@@ -302,7 +302,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Backblaze B2</h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  S3-based storage for cloud stored backups and replication.
+                  S3-based storage for cloud replication of network drives and VM backups.
                 </p>
               </div>
             </TiltCard>
@@ -327,7 +327,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Microsoft Entra ID</h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  Identity and access management using Microsoft Entra ID.
+                  SSO Identity and access management using Microsoft Entra ID.
                 </p>
               </div>
             </TiltCard>
@@ -355,7 +355,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Tailscale</h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  Site-to-site connectivity, as well as a Wireguard-based VPN for remote access.
+                  Wireguard-based site-to-site connectivity, as well as client-VPN remote access.
                 </p>
               </div>
             </TiltCard>
