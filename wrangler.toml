@@ -1,0 +1,20 @@
+name = "portfolio"
+compatibility_date = "2024-02-01"
+
+[build]
+command = "npm run pages:build"
+
+[site]
+bucket = ".vercel/output/static"
+
+[env.production]
+name = "portfolio-production"
+routes = [
+  { pattern = "phoenixnet.tech/*", zone_name = "phoenixnet.tech" }
+]
+
+[env.staging]
+name = "portfolio-staging"
+routes = [
+  { pattern = "staging.phoenixnet.tech/*", zone_name = "phoenixnet.tech" }
+] 
