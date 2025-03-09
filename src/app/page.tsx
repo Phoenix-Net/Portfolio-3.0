@@ -446,7 +446,7 @@ export default function Home() {
                 description: 'Experience with Docker containers and orchestration.'
               },
               { 
-                icon: <FaLaptopHouse className="w-8 h-8 transition-transform duration-300 group-hover:scale-125 group-hover:rotate-[8deg]" />, 
+                icon: <FaLaptopHouse className="w-12 h-12 transition-transform duration-300 group-hover:scale-125 group-hover:rotate-[8deg]" />, 
                 title: 'Remote Access', 
                 description: 'Experience with remote desktop technologies like Apache Guacamole, Citrix, and Horizon.'
               },
