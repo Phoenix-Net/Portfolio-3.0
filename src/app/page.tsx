@@ -510,7 +510,7 @@ export default function Home() {
             <a href="https://status.phoenixnet.tech" className="text-white hover:text-white/80">
               <FaWifi className="w-6 h-6" />
             </a>
-            <a href="mailto:phoenix@phoenixnet.tech" className="text-white hover:text-white/80">
+            <a href="mailto:phoenix@phoenixnet-labs.com" className="text-white hover:text-white/80">
               <FaEnvelope className="w-6 h-6" />
             </a>
           </div>
