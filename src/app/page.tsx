@@ -26,7 +26,7 @@ export default function Home() {
             </div>
             <div>
               <h1 className="text-4xl font-bold mb-2">PhoenixNet-Labs</h1>
-              <p className="text-xl text-gray-200">A compliation of projects, accomplishments, and experiences.</p>
+              <p className="text-xl text-gray-200">An IT Solutions Partner, Consultancy, and Managed Services Provider</p>
             </div>
           </div>
         </div>
@@ -35,25 +35,25 @@ export default function Home() {
       {/* Main Content */}
       <section className="py-20">
         <div className="container">
-          <h2 className="text-3xl font-bold mb-12">A Little About Me</h2>
+          <h2 className="text-3xl font-bold mb-12">A Little About Our Company</h2>
           
           {/* Two Paragraph Sections */}
           <div className="grid md:grid-cols-2 gap-12 mb-20">
             <div>
               <h3 className="text-xl font-semibold mb-4">Who, or rather, what is PhoenixNet-Labs?</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                PhoenixNet-Labs is a "pseudo-company" that I use to host my projects, 
-                as well as to showcase my skills and knowledge to future employers.
+                PhoenixNet-Labs is the company that I use to host my projects, 
+                as well as to showcase my skills and knowledge.
                 <br/><br/>
-                I created PhoenixNet-Labs in highschool to put a brand on my projects, akin to how Microsoft uses "Contoso" for their examples.
+                I created PhoenixNet-Labs back when I was in highschool to put a brand on my projects, akin to how Microsoft uses "Contoso" for their examples. And have been using it since.
                 <br/><br/>
-                PhoenixNet-Labs is not a real company, and is not affiliated with any real company. I use this brand to "encompass" all of my projects and practices, and to give them a cohesive brand.
+                PhoenixNet-Labs is classified as a "ficticious company", and is registered in the state of Missouri. I use this name to encompass all of my projects and practices, and to give them a cohesive brand.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-4">Well, then who are you?</h3>
+              <h3 className="text-xl font-semibold mb-4">Who runs / operates PhoenixNet-Labs?</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                I'm an IT Specialist, and have been in the IT field for about 4 years now. I've encountered many different technologies during my time.
+                My name is Jacob, but my friends call me "Phoenix", I'm an IT Specialist, and have been in the IT field for about 4 years now. I've encountered many different technologies during my time.
                 <br/><br/>
                 I use my lab to learn new technologies, mirror my employer's environments, and to keep my skills sharp.
                 <br/><br/>
@@ -133,26 +133,26 @@ export default function Home() {
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm font-medium text-gray-600 dark:text-gray-300">
-                    CUCM
+                    VoIP
                   </span>
                   <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm font-medium text-gray-600 dark:text-gray-300">
-                    Unity
+                    Digital Fax
                   </span>
                   <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm font-medium text-gray-600 dark:text-gray-300">
-                    IM & Presence
+                    PBX + Trunking
                   </span>
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Telecommunications</h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  A communications system using Cisco CUCM, Cisco Unity, and UC Phones.
+                  A communications system using FusionPBX, and various VoIP phones, as well as virtual fax communications.
                 </p>
               </div>
             </TiltCard>
 
             <TiltCard className="group bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02]">
-              <div className="h-48 bg-gradient-to-br from-[#2a3557] via-header to-[#3d4d7d] relative overflow-hidden cursor-pointer" onClick={() => setSelectedImage({ src: "/images/unifi.png", alt: "Ubiquiti Wireless" })}>
+              <div className="h-48 bg-gradient-to-br from-[#2a3557] via-header to-[#3d4d7d] relative overflow-hidden cursor-pointer" onClick={() => setSelectedImage({ src: "/images/UniFi_Updated.png", alt: "Ubiquiti Wireless" })}>
                 <Image
-                  src="/images/unifi.png"
+                  src="/images/UniFi_Updated.png"
                   alt="Ubiquiti Wireless"
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
@@ -166,18 +166,21 @@ export default function Home() {
                   <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm font-medium text-gray-600 dark:text-gray-300">
                     UniFi
                   </span>
+                  <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm font-medium text-gray-600 dark:text-gray-300">
+                    Cisco
+                  </span>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Wireless Networking</h3>
+                <h3 className="text-xl font-semibold mb-2">Networking</h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  Wireless networking using Ubiquiti APs, and UniFi Controller.
+                  Routing and Wireless networking using Ubiquiti UniFi products and switching using Cisco Catalyst switches.
                 </p>
               </div>
             </TiltCard>
 
             <TiltCard className="group bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02]">
-              <div className="h-48 bg-gradient-to-br from-[#2a3557] via-header to-[#3d4d7d] relative overflow-hidden cursor-pointer" onClick={() => setSelectedImage({ src: "/images/truenas.png", alt: "Centralized Storage" })}>
+              <div className="h-48 bg-gradient-to-br from-[#2a3557] via-header to-[#3d4d7d] relative overflow-hidden cursor-pointer" onClick={() => setSelectedImage({ src: "/images/TrueNAS_Updated.png", alt: "Centralized Storage" })}>
                 <Image
-                  src="/images/truenas.png"
+                  src="/images/TrueNAS_Updated.png"
                   alt="Centralized Storage"
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
@@ -333,9 +336,9 @@ export default function Home() {
             </TiltCard>
 
             <TiltCard className="group bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02]">
-              <div className="h-48 bg-gradient-to-br from-[#2a3557] via-header to-[#3d4d7d] relative overflow-hidden cursor-pointer" onClick={() => setSelectedImage({ src: "/images/tailscale.svg", alt: "Tailscale" })}>
+              <div className="h-48 bg-gradient-to-br from-[#2a3557] via-header to-[#3d4d7d] relative overflow-hidden cursor-pointer" onClick={() => setSelectedImage({ src: "/images/Pangolin_Demo.png", alt: "Tailscale" })}>
                 <Image
-                  src="/images/tailscale.svg"
+                  src="/images/Pangolin_Demo.png"
                   alt="Tailscale"
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
@@ -353,9 +356,9 @@ export default function Home() {
                     Wireguard
                   </span>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Tailscale</h3>
+                <h3 className="text-xl font-semibold mb-2">Pangolin</h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  Wireguard-based site-to-site connectivity, as well as client-VPN remote access.
+                  Wireguard site-to-site connectivity, traffic-proxying, as well as VPN remote access.
                 </p>
               </div>
             </TiltCard>
@@ -500,7 +503,7 @@ export default function Home() {
             </div>
             <div>
               <p className="text-sm font-bold">PhoenixNet-Labs</p>
-              <p className="text-sm">2017-2025</p>
+              <p className="text-sm">2017-2026</p>
             </div>
           </div>
           <div className="flex gap-6">
