@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "PhoenixNet-Labs",
-  description: "An IT Solutions Partner, Consultancy, and Managed Services Provider",
+  description: "A trusted partner for your IT consulting needs",
   icons: {
     icon: '/images/pnet-logo.png',
     apple: '/images/pnet-logo.png',
