@@ -26,7 +26,7 @@ export default function Home() {
             </div>
             <div>
               <h1 className="text-4xl font-bold mb-2">PhoenixNet-Labs</h1>
-              <p className="text-xl text-gray-200">An IT Solutions Partner, Consultancy, and Managed Services Provider</p>
+              <p className="text-xl text-gray-200">A trusted partner for your IT consulting needs</p>
             </div>
           </div>
         </div>
