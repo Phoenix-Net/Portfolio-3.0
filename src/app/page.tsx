@@ -26,7 +26,7 @@ export default function Home() {
             </div>
             <div>
               <h1 className="text-4xl font-bold mb-2">PhoenixNet-Labs</h1>
-              <p className="text-xl text-gray-200"><em>A trusted partner for your IT consulting needs</em></p>
+              <p className="text-xl text-gray-200">An IT Solutions Partner, Consultancy, and Managed Services Provider</p>
             </div>
           </div>
         </div>
@@ -53,9 +53,9 @@ export default function Home() {
             <div>
               <h3 className="text-xl font-semibold mb-4">Who runs / operates PhoenixNet-Labs?</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                My name is Jacob, but my friends call me "Phoenix", I'm an IT Specialist, and have been in the IT field for nearly 5 years now, and I've encountered many different technologies along the way.
+                My name is Jacob, but my friends call me "Phoenix", I'm an IT Specialist, and have been in the IT field for about 4 years now. I've encountered many different technologies during my time.
                 <br/><br/>
-                I use my lab to learn new software from many vendors, mirror my employer's environments, and to keep my skills sharp.
+                I use my lab to learn new technologies, mirror my employer's environments, and to keep my skills sharp.
                 <br/><br/>
                 Below are some of the projects that I've worked on, and a list of my skills, take a look around!
               </p>
