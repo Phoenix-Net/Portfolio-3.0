@@ -167,7 +167,7 @@ export default function DirectoryPage() {
             className="shrink-0 rounded-sm"
           />
           <span>
-            This Page was inspired by our awesome friends over at{' '}
+            This Page was heavily inspired by our awesome friends over at{' '}
             <a
               href="https://furrytel.net"
               target="_blank"
@@ -176,7 +176,7 @@ export default function DirectoryPage() {
             >
               FurryTel.net
             </a>
-          </span>
+          </span> ❤️
         </p>
       </div>
 
