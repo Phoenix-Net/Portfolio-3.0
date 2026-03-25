@@ -11,35 +11,25 @@ export const metadata: Metadata = {
 
 /** Replace with your real numbers and routes — dummy data for layout only */
 const PHONE_NUMBERS: { tel: string; label: string; region: string }[] = [
-  { tel: '+15550100', label: '555-0100', region: 'United States' },
-  { tel: '+15550101', label: '555-0101', region: 'Canada' },
-  { tel: '+15550102', label: '555-0102', region: 'Fax (US)' },
+  { tel: '3142822235', label: '314-282-2235', region: 'Main Office' },
+  { tel: '3145841540', label: '314-584-1540', region: 'Fax' }
 ];
 
-const MAIN_LINE = '15550100';
-
 const EXTENSIONS: { ext: string; name: string }[] = [
-  { ext: '0', name: 'Operator' },
-  { ext: '1001', name: 'Lab — Rack A' },
-  { ext: '1002', name: 'Lab — Rack B' },
-  { ext: '1003', name: 'NOC Display 1' },
-  { ext: '1004', name: 'NOC Display 2' },
-  { ext: '2329', name: 'Document fax' },
-  { ext: '611', name: 'Trouble & repair' },
+  { ext: '1001', name: 'NOC Admin' },
+  { ext: '1005', name: 'Server Rack' },
+  { ext: '1006', name: 'Kitchen' },
+  { ext: '1007', name: 'Bar Phone' },
+  { ext: '1008', name: 'Workshop Phone' },
+  { ext: '1009', name: 'Communications Rack' },
+  { ext: '1010', name: 'Living Room Phone' },
+  { ext: '1101', name: 'Mobility Phone' },
 ];
 
 const MENUS: { ext: string; name: string }[] = [
-  { ext: '674', name: 'Leave a message' },
-  { ext: '56709', name: 'Hold music — playlist A' },
-  { ext: '9001', name: 'Music on hold' },
-  { ext: '9002', name: 'Music on hold (alt)' },
+  { ext: '8888', name: 'After Hours Recording' },
+  { ext: '7777', name: 'Operating Hours Recording' },
 ];
-
-function telMain(ext?: string) {
-  const base = MAIN_LINE.replace(/\D/g, '');
-  if (!ext) return `tel:${base}`;
-  return `tel:${base},${ext.replace(/\D/g, '')}`;
-}
 
 export default function DirectoryPage() {
   return (
@@ -59,7 +49,7 @@ export default function DirectoryPage() {
             <div>
               <p className="text-sm text-white/80 mb-1">
                 <Link href="/" className="hover:underline">
-                  ← PhoenixNet-Labs
+                  ← Return
                 </Link>
               </p>
               <h1 className="text-4xl font-bold mb-2">Directory</h1>
@@ -71,11 +61,10 @@ export default function DirectoryPage() {
         </div>
       </section>
 
-      <section className="py-12 flex-1">
+      <section className="py-6 flex-1">
         <div className="container max-w-4xl">
-          <h2 className="text-2xl font-bold text-header dark:text-white mb-8">Dial plan</h2>
 
-          <div className="space-y-12">
+          <div className="space-y-6">
             <div>
               <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100">
                 Phone numbers
@@ -85,20 +74,13 @@ export default function DirectoryPage() {
                   <thead className="bg-gray-100 dark:bg-gray-800/80 text-gray-700 dark:text-gray-200">
                     <tr>
                       <th className="px-4 py-3 font-semibold">Number</th>
-                      <th className="px-4 py-3 font-semibold">Region / note</th>
+                      <th className="px-4 py-3 font-semibold"></th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200 dark:divide-gray-700 bg-white dark:bg-gray-900/40">
                     {PHONE_NUMBERS.map((row) => (
                       <tr key={row.tel} className="text-gray-700 dark:text-gray-300">
-                        <td className="px-4 py-3">
-                          <a
-                            href={`tel:${row.tel.replace(/\D/g, '')}`}
-                            className="text-header dark:text-blue-300 hover:underline font-medium"
-                          >
-                            {row.label}
-                          </a>
-                        </td>
+                        <td className="px-4 py-3 font-medium">{row.label}</td>
                         <td className="px-4 py-3">{row.region}</td>
                       </tr>
                     ))}
@@ -112,27 +94,27 @@ export default function DirectoryPage() {
                 Extensions
               </h3>
               <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-                Dial the main line, then the extension when prompted (or use links below).
+                Dial the main line, then the extension when prompted.
               </p>
               <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm">
                 <table className="w-full text-left text-sm">
                   <thead className="bg-gray-100 dark:bg-gray-800/80 text-gray-700 dark:text-gray-200">
                     <tr>
                       <th className="px-4 py-3 font-semibold">Extension</th>
-                      <th className="px-4 py-3 font-semibold">Destination</th>
+                      <th className="px-4 py-3 font-semibold"></th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-gray-200 dark:divide-gray-700 bg-white dark:bg-gray-900/40">
-                    {EXTENSIONS.map((row) => (
-                      <tr key={row.ext} className="text-gray-700 dark:text-gray-300">
-                        <td className="px-4 py-3">
-                          <a
-                            href={telMain(row.ext)}
-                            className="text-header dark:text-blue-300 hover:underline font-mono font-medium"
-                          >
-                            {row.ext}
-                          </a>
-                        </td>
+                  <tbody>
+                    {EXTENSIONS.map((row, i) => (
+                      <tr
+                        key={row.ext}
+                        className={`text-gray-700 dark:text-gray-300 ${
+                          i % 2 === 0
+                            ? 'bg-white dark:bg-gray-900/40'
+                            : 'bg-gray-100 dark:bg-gray-800/50'
+                        }`}
+                      >
+                        <td className="px-4 py-3 font-mono font-medium">{row.ext}</td>
                         <td className="px-4 py-3">{row.name}</td>
                       </tr>
                     ))}
@@ -143,27 +125,27 @@ export default function DirectoryPage() {
 
             <div>
               <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100">
-                Menus and recordings
+                Menus, Recordings and Special Features
               </h3>
               <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm">
                 <table className="w-full text-left text-sm">
                   <thead className="bg-gray-100 dark:bg-gray-800/80 text-gray-700 dark:text-gray-200">
                     <tr>
                       <th className="px-4 py-3 font-semibold">Code</th>
-                      <th className="px-4 py-3 font-semibold">Recording / menu</th>
+                      <th className="px-4 py-3 font-semibold"></th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-gray-200 dark:divide-gray-700 bg-white dark:bg-gray-900/40">
-                    {MENUS.map((row) => (
-                      <tr key={row.ext} className="text-gray-700 dark:text-gray-300">
-                        <td className="px-4 py-3">
-                          <a
-                            href={telMain(row.ext)}
-                            className="text-header dark:text-blue-300 hover:underline font-mono font-medium"
-                          >
-                            {row.ext}
-                          </a>
-                        </td>
+                  <tbody>
+                    {MENUS.map((row, i) => (
+                      <tr
+                        key={row.ext}
+                        className={`text-gray-700 dark:text-gray-300 ${
+                          i % 2 === 0
+                            ? 'bg-white dark:bg-gray-900/40'
+                            : 'bg-gray-100 dark:bg-gray-800/50'
+                        }`}
+                      >
+                        <td className="px-4 py-3 font-mono font-medium">{row.ext}</td>
                         <td className="px-4 py-3">{row.name}</td>
                       </tr>
                     ))}
@@ -174,6 +156,29 @@ export default function DirectoryPage() {
           </div>
         </div>
       </section>
+
+      <div className="container max-w-4xl pb-10">
+        <p className="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-400">
+          <Image
+            src="/images/ftlogo.png"
+            alt="FurryTel logo"
+            width={28}
+            height={28}
+            className="shrink-0 rounded-sm"
+          />
+          <span>
+            This Page was inspired by our awesome friends over at{' '}
+            <a
+              href="https://furrytel.net"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-header dark:text-blue-300 hover:underline font-medium"
+            >
+              FurryTel.net
+            </a>
+          </span>
+        </p>
+      </div>
 
       <footer className="bg-footer-light dark:bg-footer-dark text-white py-8 mt-auto">
         <div className="container flex items-center justify-between">

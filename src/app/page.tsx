@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaTwitter, FaServer, FaStream, FaPollH, FaDesktop
 import { TiltCard } from '@/components/TiltCard';
 import { ImageModal } from '@/components/ImageModal';
 import Image from 'next/image';
-import { FaBox, FaBluesky, FaHardDrive } from 'react-icons/fa6';
+import { FaBox, FaAddressBook, FaBluesky, FaHardDrive } from 'react-icons/fa6';
 import { useState } from 'react';
 
 export default function Home() {
@@ -518,6 +518,9 @@ export default function Home() {
             </a>
             <a href="mailto:support@phoenixnet-labs.com" className="text-white hover:text-white/80">
               <FaEnvelope className="w-6 h-6" />
+            </a>
+            <a href="/directory" className="text-white hover:text-white/80">
+              <FaAddressBook className="w-6 h-6" />
             </a>
           </div>
         </div>
