@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaTwitter, FaServer, FaStream, FaPollH, FaDesktop
 import { TiltCard } from '@/components/TiltCard';
 import { ImageModal } from '@/components/ImageModal';
 import Image from 'next/image';
-import { FaBox, FaHardDrive } from 'react-icons/fa6';
+import { FaBox, FaBluesky, FaHardDrive } from 'react-icons/fa6';
 import { useState } from 'react';
 
 export default function Home() {
@@ -507,13 +507,16 @@ export default function Home() {
             </div>
           </div>
           <div className="flex gap-6">
+            <a href="https://bsky.app/profile/phoenixnet-labs.com" className="text-white hover:text-white/80">
+              <FaBluesky className="w-6 h-6" />
+            </a>
             <a href="https://github.com/Phoenix-Net" className="text-white hover:text-white/80">
               <FaGithub className="w-6 h-6" />
             </a>
             <a href="https://status.phoenixnet-labs.com" className="text-white hover:text-white/80">
               <FaWifi className="w-6 h-6" />
             </a>
-            <a href="mailto:phoenix@phoenixnet-labs.com" className="text-white hover:text-white/80">
+            <a href="mailto:support@phoenixnet-labs.com" className="text-white hover:text-white/80">
               <FaEnvelope className="w-6 h-6" />
             </a>
           </div>
