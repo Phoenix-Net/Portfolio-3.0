@@ -167,7 +167,7 @@ export default function DirectoryPage() {
             className="shrink-0 rounded-sm"
           />
           <span>
-            This Page was heavily inspired by our awesome friends over at{' '}
+            This page was heavily inspired by our awesome friends over at{' '}
             <a
               href="https://furrytel.net"
               target="_blank"
