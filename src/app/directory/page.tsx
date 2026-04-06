@@ -17,12 +17,12 @@ const PHONE_NUMBERS: { tel: string; label: string; region: string }[] = [
 
 const EXTENSIONS: { ext: string; name: string }[] = [
   { ext: '1001', name: 'NOC Admin' },
+  { ext: '1004', name: 'Livingroom Phone' },
   { ext: '1005', name: 'Server Rack' },
   { ext: '1006', name: 'Kitchen' },
   { ext: '1007', name: 'Bar Phone' },
   { ext: '1008', name: 'Workshop Phone' },
   { ext: '1009', name: 'Communications Rack' },
-  { ext: '1010', name: 'Living Room Phone' },
   { ext: '1101', name: 'Mobility Phone' },
 ];
 
